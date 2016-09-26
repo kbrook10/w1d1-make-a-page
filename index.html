@@ -1,28 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>My Spaghetti Page</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Add Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Stylesheets go here. -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
   <link rel="stylesheet" type="text/css" href="css/global.css" />
 </head>
-<body>
+<body class="main">
   <!-- Content goes here. -->
-    <div>
-      <strong>Hello</strong>
-      <strong>World</strong>
-      <h1 class="big-font red-text">Hello 1</h1>
-      <h1 class="big-font red-text">Hello 2</h1>
-      <h3>Hello 3</h3>
-      <h1>Hey there</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae rem vitae eum aut soluta est rerum esse, deleniti aspernatur voluptatibus dolores dolorum tempora, neque sit nihil saepe error illo accusamus.
-      </p>
-      <img src="http://unsplash.it/600" alt="Random photo of the trees and and road"/>
+  <!--Add Header Content Here -->
+  <header>
+    <div class="navBar container">
+      <div class="row">
+        <ul class="text-center">
+          <li class="navButtons col-md-3">Home</li>
+          <li class="navButtons col-md-3">About</li>
+          <li class="navButtons col-md-3">Content</li>
+          <li class="navButtons col-md-3">Contact</li>
+        </ul>
+      </div>
     </div>
+  </header>
+
+  <!--Add Picture of Spaghetti Jumbotron here-->
+  <main>
+      <section>
+        <div class="jumbotron">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1>Mama's Spaghetti</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <img src="images/cook.jpeg"  alt="Image of a cook"
+                  id="jumboImage"/>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+    <!--Add Article Section for various types of spaghetti here-->
+      <section>
+        <div class="mainSection container">
+          <div class="variedRecipes row">
+            <div class="recipeOne col-md-4 text-center">
+              <a href="http://allrecipes.com/recipe/19356/spaghetti-italian/?internalSource=rotd&referringId=505&referringContentType=recipe%20hub&clickId=cardslot%201">
+                <h1>Recipe One</h1>
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <img src="images/spaghetti1.jpg" alt="Image of Spaghetti Recipe 1" />
+            </div>
+            <div class="recipeTwo col-md-4 text-center">
+              <a href="http://allrecipes.com/recipe/85635/jenns-out-of-this-world-spaghetti-and-meatballs/?internalSource=staff%20pick&referringId=505&referringContentType=recipe%20hub&clickId=cardslot%202">
+                <h1>Recipe Two</h1>
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <img src="images/spaghetti2.jpg" alt="Image of Spaghetti Recipe 2" />
+            </div>
+            <div class="recipeThree col-md-4 text-center">
+              <a href="http://allrecipes.com/recipe/213266/meat-lovers-slow-cooker-spaghetti-sauce/?internalSource=hn_carousel%2002_Meat-Lover%27s%20Slow%20Cooker%20Spaghetti%20Sauce&referringId=505&referringContentType=recipe%20hub&referringPosition=carousel%2002">
+                <h1>Recipe Three</h1>
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <img src="images/spaghetti3.jpg" alt="Image of Spaghetti Recipe 3" /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+  </main>
+
+  <!--Add Footer contact Section Here-->
+  <footer>
+    <div class="container footSection">
+      <div class="row">
+        <!-- <ul> -->
+          <p class="footContacts col-md-4 text-center">&copy 2016</p>
+          <p class="footContacts col-md-4 text-center">123 Mulberry Lane Argleton, IN</p>
+          <p class="footContacts col-md-4 text-center">555-555-1234</p>
+        <!-- </ul> -->
+      </div>
+    </div>
+  </footer>
+
+
   <!-- Scripts go here. -->
   <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
   <script type="text/javascript" src="global.js"></script>

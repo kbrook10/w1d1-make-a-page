@@ -1,6 +1,60 @@
-.red-text {
-    color: red;
+/*Add generic page styling here*/
+html body {
+    background-color: rgba(237, 61, 14, 0.76);
+    font-size: 16px;
+    font-family: helvetica, arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
-.big-font {
-    font-size: 500px;
+
+.container {
+    padding: 15px 10px;
+}
+
+/*Add header styling here*/
+.navBar {
+    background-color:rgba(227, 159, 44, 0.85);
+    width: auto;
+}
+.navigation{
+    margin: 0px auto;
+}
+.navButtons {
+    display: inline-block;
+    margin: 25px 100px;
+    padding: 10px; 20px;
+    background-color: grey;
+    border-radius: 15%;
+    height: 60px;
+    width: 80px;
+    text-align: center;
+}
+li {
+    margin-top: 10px;
+}
+/*Add jumbotron styling here*/
+.jumbotron {
+    margin-bottom: 0px;
+    background-color: rgba(237, 61, 14, 0.76);
+}
+#jumboImage {
+    float: right;
+}
+
+/*Add content section styling here*/
+.mainSection {
+    background-color: rgba(227, 159, 44, 0.85);
+    width: auto;
+}
+
+img {
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+/*Add footer content styling here*/
+.footSection {
+    background-color: rgba(237, 61, 14, 0.76);
+    width: auto;
 }
